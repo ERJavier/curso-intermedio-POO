@@ -17,9 +17,9 @@ console.log(Object.getOwnPropertyDescriptors(sample))
 
 Object.defineProperties(sample, "NASATest", {
     value: "extraterrestrial",
-    enumerable: true,
-    writable: true,
-    configurable: true
+    enumerable: false,
+    writable: false,
+    configurable: false
 })
 
 sample.addCourse("class 2")
