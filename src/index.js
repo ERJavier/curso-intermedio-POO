@@ -9,9 +9,9 @@ const sample = {
     }
 }
 
-console.log(Object.keys(sample))
-console.log(Object.getOwnPropertyNames(sample))
-console.log(Object.entries(sample))
+// console.log(Object.keys(sample))
+// console.log(Object.getOwnPropertyNames(sample))
+// console.log(Object.entries(sample))
 console.log(Object.getOwnPropertyDescriptors(sample))
 
 
