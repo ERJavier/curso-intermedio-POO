@@ -1,0 +1,16 @@
+{
+  "name": "curso-intermedio-poo",
+  "version": "1.0.0",
+  "description": "programing object orientent ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "vanilla"
+  ],
+  "author": "Javier Cepeda <erjavierc@gmail.com>",
+  "license": "ISC"
+}
