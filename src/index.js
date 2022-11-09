@@ -79,7 +79,8 @@ function recursive(numbersArray) {
     if(numbersArray.length != 0){
         const firstNum = numbersArray[0];
         console.log(firstNum)
+        
         numbersArray.shift()
-        return recursive(numbersArray)
+        recursive(numbersArray)
     }
 }
