@@ -55,3 +55,31 @@ const obj4 = Object.create(obj1);
 const stringifiedComplexObj = JSON.stringify(obj1);
 
 const obj5 = JSON.parse(stringifiedComplexObj);
+
+
+
+// function recursive() {
+//     if (true){
+
+//     }else {
+
+//     }
+// }
+
+
+const numbers = [0,1,2,3,4,5,6,77,6556455,3,2]
+let number = 0;
+for (let index = 0; index < numbers.length; index++) {
+    number = numbers[index];
+    console.log({index, number});
+}
+
+
+function recursive(numbersArray) {
+    if(numbersArray.length != 0){
+        const firstNum = numbersArray[0];
+        console.log(firstNum)
+        numbersArray.shift()
+        return recursive(numbersArray)
+    }
+}
