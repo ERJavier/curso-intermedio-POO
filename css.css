@@ -1,0 +1,19 @@
+.item {
+    flex-direction: row-reverse;
+}
+
+
+a[title] {
+    display: block;
+}
+
+input:invalid{
+    color: red;
+}
+
+header{
+    grid-column: 1/100%;
+}
+img {
+    filter: grayscale(0);
+}
