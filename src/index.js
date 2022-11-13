@@ -137,10 +137,18 @@ const studentBase = {
 
 
 const juan = deepCopy(studentBase);
+
+// cannot modify when seal
+Object.seal(juan)
+
+// define properties lets you change configuration one by one
 Object.defineProperties(juan, "name", {
     value: "juan",
     configurable: false,
 })
+
+// ask if it is sealed
+Object.isSealed(juan);
 
 // juan.name = "juan",
 // juan.age = 20
