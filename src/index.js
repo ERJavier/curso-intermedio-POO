@@ -118,3 +118,29 @@ function recursive(numbersArray) {
         recursive(numbersArray)
     }
 }
+
+
+
+
+const studentBase = {
+    name: undefined,
+    email: undefined,
+    age:  undefined,
+    apprvedCoursed: undefined,
+    learningPaths: undefined,
+    socialMedia: {
+        twiter: undefined,
+        instagram: undefined,
+        facebook: undefined,
+    },
+};
+
+
+const juan = deepCopy(studentBase);
+Object.defineProperties(juan, "name", {
+    value: "juan",
+    configurable: false,
+})
+
+// juan.name = "juan",
+// juan.age = 20
