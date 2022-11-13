@@ -153,10 +153,13 @@ Object.isSealed(juan2);
 // juan.name = "juan",
 // juan.age = 20
 
+function requireParam(param) {
+    throw new Error(param + " is a must")
+}
 
 function createStudent({
-    name,
-    email,
+    name = requireParam("name"),
+    email = requireParam("email"),
     age,
     socialMedia
 }) {
@@ -172,5 +175,5 @@ function createStudent({
 const juan = createStudent({
     name:"juanito",
     age: 29,
-    
+
 })
